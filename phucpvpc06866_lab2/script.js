@@ -44,3 +44,55 @@ let spreadOut = () => {
     return sentece;
 };
 console.log("spreadOut:",spreadOut());
+
+// bài 5
+function generateTableHeader(headerTitles){
+    if(!headerTitles || headerTitles.lenght === 0){
+        return "";
+    }
+    const headerHtml = headerTitles.map((title) => `<th>${title}</th>`)
+    return `<thead><tr>${headerHtml}</tr></thead>`;
+}
+
+function generateTableRowStudents(data){
+    return `<tr>
+        <td>${data.id}</td>
+        <td><img src="${data.avatar}"></td>
+        <td>${data.name}</td>
+        <td>${data.createdAt}</td>
+    </tr>`;
+}
+
+function generateTable(headers, data){
+    if(!headers || !data || headers.lenght === 0 || data.lenght === 0){
+        return "";
+    }
+    let html = ``;
+
+    let headerRow = generateTableHeader(headers);
+    data.forEach(element => {
+        html += generateTableRowStudents(element);
+    });
+    return `<table>${headerRow} <tbody>${html}</tbody></table>`
+}
+
+let API_URL = "https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/";
+
+fetch(API_URL+'students')
+.then(function (response){
+    response.json().then(function(data){
+    console.log(data);
+       let headers = [
+        'ID',
+        'Ảnh đại diện',
+        'Họ và tên',
+        'Ngày tạo'
+       ]
+       let app = document.getElementById('app');
+       app.innerHTML = generateTable(headers, data);
+    })
+})
+.catch(function (response){
+    console.log("Error: \n" +response);
+})
+
