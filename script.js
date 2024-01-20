@@ -3,7 +3,7 @@ let promise = new Promise(function (resolve, reject) {
     resolve(1);
     setTimeout(() => resolve(2), 1000);
 });
-// promise.then(alert);
+promise.then(alert);
 // kết quả hiển thị số 1 trong hàm alert
 /*Vì đối với promise đã nhận resolve(1) rồi nên resolve(2) không có tác dụng,
  vì Promise đã giải quyết với giá trị 1 từ trước đó.*/
