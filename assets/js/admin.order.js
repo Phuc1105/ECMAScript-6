@@ -13,7 +13,7 @@ fetch(API_URL_ORDERS + 'orders')
                     <td>${order.customer_phone_number}</td>
                     <td>${order.created_date}</td>
                     <td>${order.status}</td>
-                    <td><button type="button" class="btn btn-primary" onclick='clickOrderDetails(${order.id})'>View Details</button></td>
+                    <td><button type="button" class="btn btn-primary" onclick='clickOrderDetails(${order.id})'>See details</button></td>
                 `;
             orderTableBody.appendChild(row);
         });
