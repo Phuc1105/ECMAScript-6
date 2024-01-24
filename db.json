@@ -1,0 +1,180 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Pizza"
+    },
+    {
+      "id": 2,
+      "name": "Hamburger"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Pizza Margherita",
+      "cate_id": 1,
+      "price": 10.99,
+      "detail": "Classic Margherita pizza with tomato, mozzarella, and basil.",
+      "image": "f1.png"
+    },
+    {
+      "id": 2,
+      "name": "Hamburger Deluxe",
+      "cate_id": 2,
+      "price": 8.99,
+      "detail": "Deluxe hamburger with lettuce, tomato, cheese, and special sauce.",
+      "image": "f2.png"
+    },
+    {
+      "id": 3,
+      "name": "Pepperoni Pizza",
+      "cate_id": 1,
+      "price": 12.99,
+      "detail": "Spicy pepperoni pizza with tomato sauce and melted cheese.",
+      "image": "f3.png"
+    },
+    {
+      "id": 4,
+      "name": "Cheeseburger Classic",
+      "cate_id": 2,
+      "price": 9.99,
+      "detail": "Classic cheeseburger with lettuce, tomato, and pickles.",
+      "image": "f4.png"
+    },
+    {
+      "id": 5,
+      "name": "Vegetarian Pizza",
+      "cate_id": 1,
+      "price": 11.99,
+      "detail": "Vegetarian pizza with assorted fresh vegetables and cheese.",
+      "image": "f5.png"
+    },
+    {
+      "id": 6,
+      "name": "Chicken BBQ Burger",
+      "cate_id": 2,
+      "price": 10.99,
+      "detail": "Grilled chicken burger with BBQ sauce, lettuce, and onion rings.",
+      "image": "f6.png"
+    },
+    {
+      "id": 7,
+      "name": "Supreme Pizza",
+      "cate_id": 1,
+      "price": 13.99,
+      "detail": "Supreme pizza with a variety of toppings including pepperoni, sausage, and olives.",
+      "image": "f7.png"
+    },
+    {
+      "id": 8,
+      "name": "Fish Fillet Burger",
+      "cate_id": 2,
+      "price": 11.99,
+      "detail": "Crispy fish fillet burger with tartar sauce and coleslaw.",
+      "image": "f8.png"
+    },
+    {
+      "id": 9,
+      "name": "Mushroom Lovers Pizza",
+      "cate_id": 1,
+      "price": 12.99,
+      "detail": "Pizza loaded with a variety of mushrooms and melted cheese.",
+      "image": "f9.png"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customer_name": "Phan Văn Phúc",
+      "customer_address": "467, cần thơ, cái răng, đường trần chiên",
+      "customer_email": "phucpvpc06866@fpt.edu.vn",
+      "customer_phone_number": "090501590",
+      "created_date": "2024-01-18T12:00:00",
+      "status": "Pending"
+    },
+    {
+      "id": 2,
+      "customer_name": "Nguyễn Thị Hồng",
+      "customer_address": "123, Hồ Chí Minh, Quận 1, đường Nguyễn Huệ",
+      "customer_email": "hongnt@example.com",
+      "customer_phone_number": "0905123456",
+      "created_date": "2024-02-01T10:30:00",
+      "status": "Processing"
+    },
+    {
+      "id": 3,
+      "customer_name": "Trần Văn An",
+      "customer_address": "789, Hà Nội, Hoàn Kiếm, phố Cửa Đông",
+      "customer_email": "antran@gmail.com",
+      "customer_phone_number": "0987654321",
+      "created_date": "2024-02-10T15:45:00",
+      "status": "Completed"
+    },
+    {
+      "id": 4,
+      "customer_name": "Lê Thị Mai",
+      "customer_address": "456, Đà Nẵng, Hải Châu, đường Bạch Đằng",
+      "customer_email": "maile@gmail.com",
+      "customer_phone_number": "0912233445",
+      "created_date": "2024-03-05T08:15:00",
+      "status": "Shipped"
+    },
+    {
+      "id": 5,
+      "customer_name": "Hoàng Văn Hùng",
+      "customer_address": "678, Vũng Tàu, Bà Rịa - Vũng Tàu, đường Trương Công Định",
+      "customer_email": "hungvh@yahoo.com",
+      "customer_phone_number": "0978123456",
+      "created_date": "2024-03-20T14:20:00",
+      "status": "Pending"
+    },
+    {
+      "id": 6,
+      "customer_name": "Ngọc Thị Minh",
+      "customer_address": "234, Quảng Ninh, Hạ Long, đường Hùng Thắng",
+      "customer_email": "minhntm@gmail.com",
+      "customer_phone_number": "0934123456",
+      "created_date": "2024-04-02T09:00:00",
+      "status": "Processing"
+    }
+  ],
+  "order_details": [
+    {
+      "order_id": 1,
+      "product_id": 1,
+      "quantity": 2,
+      "unit_price": 10.99
+    },
+    {
+      "order_id": 2,
+      "product_id": 3,
+      "quantity": 3,
+      "unit_price": 12.99
+    },
+    {
+      "order_id": 3,
+      "product_id": 5,
+      "quantity": 1,
+      "unit_price": 11.99
+    },
+    {
+      "order_id": 4,
+      "product_id": 4,
+      "quantity": 2,
+      "unit_price": 9.99
+    },
+    {
+      "order_id": 5,
+      "product_id": 7,
+      "quantity": 1,
+      "unit_price": 13.99
+    },
+    {
+      "order_id": 6,
+      "product_id": 9,
+      "quantity": 4,
+      "unit_price": 12.99
+    }
+  ]
+}
