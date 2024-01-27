@@ -1,3 +1,2 @@
-import { sayHi, Name } from "./modules/Post/index.js";
-sayHi();
-console.log(Name);
+import ListPost, {CreatePost} from "./modules/Post/index.js";
+console.log(new CreatePost("Hello", "123"));

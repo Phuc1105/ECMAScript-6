@@ -1,8 +1,7 @@
-let sayHi = function (){
-    console.log("hi");
-}
+import ListPost from "./list.js";
+import CreatePost from "./create.js";
 
-const Name = "sayEm";
-export {Name};
-
-export {sayHi};
+export {CreatePost};
+export default ListPost;
+// export * from "./update.js";
+// export * from "./create.js";
