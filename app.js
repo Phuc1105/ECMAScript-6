@@ -140,10 +140,10 @@ let testAPI = async () => {
         console.log("One get là:", oneGetComment.data);
 
         const allPosts = await Post.getAll();
-        console.log('All Post là:', allPosts);
+        console.log('All Post là:', allPosts.data);
     
         const onePost = await Post.getOne(1);
-        console.log('One Post là:', onePost);
+        console.log('One Post là:', onePost.data);
     } catch (error) {
         console.error("Lỗi nè", error);  
     }
