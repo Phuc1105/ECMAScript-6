@@ -26,54 +26,52 @@
 <body>
     <div class="wrapper">
         <div class="" id="header"></div>
-
-    <div class="main-panel">
-        <div class="row w-100">
-            <div class="col-6">
-                <div class="content">
-                    <div class="alert alert-dark text-dark" role="alert">
-                        <h6>Danh mục</h6>
+        <div class="main-panel">
+            <div class="row w-100">
+                <div class="col-6">
+                    <div class="content">
+                        <div class="alert alert-dark text-dark" role="alert">
+                            <h6>Danh mục</h6>
+                        </div>
+                        <form action="" class="bg-light ">
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput" class="form-label">Mã danh mục</label>
+                                <input type="text" class="form-control" id="category_id" placeholder="Mã danh mục sản phẩm" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Tên danh mục</label>
+                                <input type="text" class="form-control" id="categoryName" placeholder="Tên danh mục sản phẩm">
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" onclick="addCategory()" class="btn btn-primary mb-3">THÊM</button>
+                            </div>
+                        </form>
                     </div>
-                    <form action="" class="bg-light ">
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Mã danh mục</label>
-                            <input type="text" class="form-control" id="category_id" placeholder="Mã danh mục sản phẩm"
-                                readonly>
-                        </div>
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput2" class="form-label">Tên danh mục</label>
-                            <input type="text" class="form-control" id="categoryName"
-                                placeholder="Tên danh mục sản phẩm">
-                        </div>
-                        <div class="mb-3">
-                            <button type="submit" onclick="addCategory()" class="btn btn-primary mb-3">ADD</button>
-                        </div>
-                    </form>
                 </div>
-            </div>
-            <div class="col-6">
-                <div class="content">
-                    <div class="alert alert-dark text-dark" role="alert">
-                        <h6>Danh sách loại</h6>
+                <div class="col-6">
+                    <div class="content">
+                        <div class="alert alert-dark text-dark" role="alert">
+                            <h6>Danh sách loại</h6>
+                        </div>
+        
+                        <table class="table bg-light">
+                            <thead>
+                                <tr>
+                                    <th>Mã Danh mục</th>
+                                    <th>Tên</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="categoryContainer">
+        
+                            </tbody>
+                        </table>
+        
                     </div>
-
-                    <table class="table bg-light">
-                        <thead>
-                            <tr>
-                                <th>Category ID</th>
-                                <th>Name</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody id="categoryContainer">
-
-                        </tbody>
-                    </table>
-
                 </div>
             </div>
         </div>
-    </div>
+        
 
     <div class="" id="footer"></div>
     </div>

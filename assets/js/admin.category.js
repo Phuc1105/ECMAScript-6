@@ -12,7 +12,7 @@ let showCategory = function () {
                     `<tr>
                         <td>${element.id}</td>
                         <td>${element.name}</td>
-                        <td><button type="button" class="btn btn-primary" onclick="editCategory(${element.id}, '${element.name}')">Edit</button></td>
+                        <td><button type="button" class="btn btn-primary" onclick="editCategory(${element.id}, '${element.name}')">Sửa</button></td>
                     </tr>`;
             });
             categoryContainer.innerHTML = showhtml;

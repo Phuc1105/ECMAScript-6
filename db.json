@@ -12,77 +12,77 @@
   "products": [
     {
       "id": 1,
-      "name": "Pizza Margherita",
+      "name": "Pizza chay",
       "cate_id": 1,
-      "price": 10.99,
-      "detail": "Classic Margherita pizza with tomato, mozzarella, and basil.",
+      "price": 35000,
+      "detail": "Bánh pizza cổ điển của tôi với cà chua, phô mai mozzarella và húng quế.",
       "image": "f1.png"
     },
     {
       "id": 2,
-      "name": "Hamburger Deluxe",
+      "name": "Burger Gà",
       "cate_id": 2,
-      "price": 8.99,
-      "detail": "Deluxe hamburger with lettuce, tomato, cheese, and special sauce.",
+      "price": 25000,
+      "detail": "Burger gà với ốc, cà chua, rau xanh và sốt mayonnaise.",
       "image": "f2.png"
     },
     {
       "id": 3,
-      "name": "Pepperoni Pizza",
+      "name": "Pizza Hải Sản",
       "cate_id": 1,
-      "price": 12.99,
-      "detail": "Spicy pepperoni pizza with tomato sauce and melted cheese.",
+      "price": 42000,
+      "detail": "Pizza ngon tuyệt vời với các loại hải sản và sốt cà chua đậm đà.",
       "image": "f3.png"
     },
     {
       "id": 4,
-      "name": "Cheeseburger Classic",
+      "name": "Burger Bò Phô Mai",
       "cate_id": 2,
-      "price": 9.99,
-      "detail": "Classic cheeseburger with lettuce, tomato, and pickles.",
+      "price": 32000,
+      "detail": "Burger bò phô mai thơm ngon với rau sống, cà chua và sốt barbecue.",
       "image": "f4.png"
     },
     {
       "id": 5,
-      "name": "Vegetarian Pizza",
+      "name": "Pizza Thịt Nướng",
       "cate_id": 1,
-      "price": 11.99,
-      "detail": "Vegetarian pizza with assorted fresh vegetables and cheese.",
+      "price": 38000,
+      "detail": "Pizza thịt nướng với sốt cà chua và lớp phô mai mỏng trên cùng.",
       "image": "f5.png"
     },
     {
       "id": 6,
-      "name": "Chicken BBQ Burger",
+      "name": "Burger Cá Ngừ",
       "cate_id": 2,
-      "price": 10.99,
-      "detail": "Grilled chicken burger with BBQ sauce, lettuce, and onion rings.",
+      "price": 29000,
+      "detail": "Burger cá ngừ tươi ngon với rau xanh, cà chua và sốt mù tạt.",
       "image": "f6.png"
     },
     {
       "id": 7,
-      "name": "Supreme Pizza",
+      "name": "Pizza Nấm Phô Mai",
       "cate_id": 1,
-      "price": 13.99,
-      "detail": "Supreme pizza with a variety of toppings including pepperoni, sausage, and olives.",
+      "price": 36000,
+      "detail": "Pizza hấp dẫn với nấm và phô mai tan chảy trên bề mặt.",
       "image": "f7.png"
     },
     {
       "id": 8,
-      "name": "Fish Fillet Burger",
+      "name": "Burger Cá Hồi",
       "cate_id": 2,
-      "price": 11.99,
-      "detail": "Crispy fish fillet burger with tartar sauce and coleslaw.",
+      "price": 30000,
+      "detail": "Burger cá hồi đầy đủ chất dinh dưỡng với rau sống và sốt yogurt.",
       "image": "f8.png"
     },
     {
       "id": 9,
-      "name": "Mushroom Lovers Pizza",
+      "name": "Pizza Sườn Xám",
       "cate_id": 1,
-      "price": 12.99,
-      "detail": "Pizza loaded with a variety of mushrooms and melted cheese.",
+      "price": 40000,
+      "detail": "Pizza sườn xám hấp dẫn với sốt cà chua và nhiều loại gia vị.",
       "image": "f9.png"
     }
-  ],
+  ],  
   "orders": [
     {
       "id": 1,
@@ -91,7 +91,7 @@
       "customer_email": "phucpvpc06866@fpt.edu.vn",
       "customer_phone_number": "090501590",
       "created_date": "2024-01-18T12:00:00",
-      "status": "Pending"
+      "status": "Đã hoàn thành"
     },
     {
       "id": 2,
@@ -100,7 +100,7 @@
       "customer_email": "hongnt@example.com",
       "customer_phone_number": "0905123456",
       "created_date": "2024-02-01T10:30:00",
-      "status": "Processing"
+      "status": "Đang chờ xử lý"
     },
     {
       "id": 3,
@@ -109,7 +109,7 @@
       "customer_email": "antran@gmail.com",
       "customer_phone_number": "0987654321",
       "created_date": "2024-02-10T15:45:00",
-      "status": "Completed"
+      "status": "Đang xử lý"
     },
     {
       "id": 4,
@@ -118,7 +118,7 @@
       "customer_email": "maile@gmail.com",
       "customer_phone_number": "0912233445",
       "created_date": "2024-03-05T08:15:00",
-      "status": "Shipped"
+      "status": "Đã gửi đi"
     },
     {
       "id": 5,
@@ -127,7 +127,7 @@
       "customer_email": "hungvh@yahoo.com",
       "customer_phone_number": "0978123456",
       "created_date": "2024-03-20T14:20:00",
-      "status": "Pending"
+      "status": "Đang chờ xử lý"
     },
     {
       "id": 6,
@@ -136,7 +136,7 @@
       "customer_email": "minhntm@gmail.com",
       "customer_phone_number": "0934123456",
       "created_date": "2024-04-02T09:00:00",
-      "status": "Processing"
+      "status": "Đang xử lý"
     }
   ],
   "order_details": [
@@ -150,31 +150,31 @@
       "order_id": 2,
       "product_id": 3,
       "quantity": 3,
-      "unit_price": 12.99
+      "unit_price": 42000
     },
     {
       "order_id": 3,
       "product_id": 5,
       "quantity": 1,
-      "unit_price": 11.99
+      "unit_price": 38000
     },
     {
       "order_id": 4,
       "product_id": 4,
       "quantity": 2,
-      "unit_price": 9.99
+      "unit_price": 32000
     },
     {
       "order_id": 5,
       "product_id": 7,
       "quantity": 1,
-      "unit_price": 13.99
+      "unit_price": 36000
     },
     {
       "order_id": 6,
       "product_id": 9,
       "quantity": 4,
-      "unit_price": 12.99
+      "unit_price": 40000
     }
   ]
 }
