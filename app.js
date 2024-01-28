@@ -109,27 +109,37 @@ class APICaller {
     }
 }
 
-class Comment {
+class Comment extends APICaller {
+    constructor() {
+        super("http://localhost:3000/comment");
+    }
+
     static getAll() {
-        const apiCaller = new APICaller("http://localhost:3000/comment");
+        const apiCaller = new Comment();
         return apiCaller.get('');
     }
 
     static getOne(id) {
-        const apiCaller = new APICaller("http://localhost:3000/comment");
+        const apiCaller = new Comment();
         return apiCaller.get(id);
     }
 }
-class Post {
+
+class Post extends APICaller {
+    constructor() {
+        super('http://localhost:3000/comment');
+    }
+
     static getAll() {
-      const apiCaller = new APICaller('http://localhost:3000/comment');
-      return apiCaller.get('');
+        const apiCaller = new Post();
+        return apiCaller.get('');
     }
+
     static getOne(id) {
-      const apiCaller = new APICaller('http://localhost:3000/comment');
-      return apiCaller.get(id);
+        const apiCaller = new Post();
+        return apiCaller.get(id);
     }
-  }
+}
 
 let testAPI = async () => {
     try {
