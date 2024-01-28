@@ -1,3 +1,7 @@
+import testAPI from "./module/Test/testAPI.js";
+testAPI();
+
+// console.log(testAPI());;
 // bài 1
 function demoThis(name) {
     this.name = name;
@@ -94,69 +98,69 @@ person.firstName = 'Isaac';
 
 console.log("Tên đầy đủ là:" ,person.fullName); 
 
-//------------------- bài 5---------------------
-//----------------------------------------------
-const axios = require('axios');
+// // ------------------- bài 5---------------------
+// // ----------------------------------------------
+// const axios = require('axios');
 
-class APICaller {
-    constructor(baseUrl) {
-        this.baseUrl = baseUrl;
-    }
+// class APICaller {
+//     constructor(baseUrl) {
+//         this.baseUrl = baseUrl;
+//     }
 
-    get(endpoint) {
-        const apiUrl = `${this.baseUrl}/${endpoint}`;
-        return axios.get(apiUrl);
-    }
-}
+//     get(endpoint) {
+//         const apiUrl = `${this.baseUrl}/${endpoint}`;
+//         return axios.get(apiUrl);
+//     }
+// }
 
-class Comment extends APICaller {
-    constructor() {
-        super("http://localhost:3000/comment");
-    }
+// class Comment extends APICaller {
+//     constructor() {
+//         super("http://localhost:3000/comment");
+//     }
 
-    static getAll() {
-        const apiCaller = new Comment();
-        return apiCaller.get('');
-    }
+//     static getAll() {
+//         const apiCaller = new Comment();
+//         return apiCaller.get('');
+//     }
 
-    static getOne(id) {
-        const apiCaller = new Comment();
-        return apiCaller.get(id);
-    }
-}
+//     static getOne(id) {
+//         const apiCaller = new Comment();
+//         return apiCaller.get(id);
+//     }
+// }
 
-class Post extends APICaller {
-    constructor() {
-        super('http://localhost:3000/comment');
-    }
+// class Post extends APICaller {
+//     constructor() {
+//         super('http://localhost:3000/comment');
+//     }
 
-    static getAll() {
-        const apiCaller = new Post();
-        return apiCaller.get('');
-    }
+//     static getAll() {
+//         const apiCaller = new Post();
+//         return apiCaller.get('');
+//     }
 
-    static getOne(id) {
-        const apiCaller = new Post();
-        return apiCaller.get(id);
-    }
-}
+//     static getOne(id) {
+//         const apiCaller = new Post();
+//         return apiCaller.get(id);
+//     }
+// }
 
-let testAPI = async () => {
-    try {
-        const allGetComment = await Comment.getAll();
-        console.log("All get là:", allGetComment.data);
+// let testAPI = async () => {
+//     try {
+//         const allGetComment = await Comment.getAll();
+//         console.log("All get là:", allGetComment.data);
 
-        const oneGetComment = await Comment.getOne(1);
-        console.log("One get là:", oneGetComment.data);
+//         const oneGetComment = await Comment.getOne(1);
+//         console.log("One get là:", oneGetComment.data);
 
-        const allPosts = await Post.getAll();
-        console.log('All Post là:', allPosts.data);
+//         const allPosts = await Post.getAll();
+//         console.log('All Post là:', allPosts.data);
     
-        const onePost = await Post.getOne(1);
-        console.log('One Post là:', onePost.data);
-    } catch (error) {
-        console.error("Lỗi nè", error);  
-    }
-};
+//         const onePost = await Post.getOne(1);
+//         console.log('One Post là:', onePost.data);
+//     } catch (error) {
+//         console.error("Lỗi nè", error);  
+//     }
+// };
 
-testAPI();
+// testAPI();
