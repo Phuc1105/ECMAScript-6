@@ -1,0 +1,16 @@
+{
+  "comment": [
+    {
+      "id": 1,
+      "name": "Phan Văn Phúc",
+      "user": "Phúc",
+      "email": "phucpvpc06866@fpt.edu.vn"
+    },
+    {
+      "id": 2,
+      "name": "Phan Văn Tèo",
+      "user": "Tèo",
+      "email": "teopv@fpt.edu.vn"
+    }
+  ]
+}
