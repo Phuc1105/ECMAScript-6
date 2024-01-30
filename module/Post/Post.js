@@ -3,7 +3,7 @@ import API_URL from "../Base/APICaller.js";
 
 const apiCaller = new APICaller(API_URL);
 
-export default class Comment {
+export default class Post {
     static getAll() {
         return apiCaller.get('');
     }
