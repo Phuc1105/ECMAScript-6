@@ -1,4 +1,5 @@
 const API_URL = "http://localhost:3000/comment";
+
 export class APICaller {
     constructor(baseUrl) {
         this.baseUrl = baseUrl;
