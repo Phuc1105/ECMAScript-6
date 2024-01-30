@@ -1,9 +1,9 @@
-import {APICaller} from "../Base/APICaller.js";
+import { APICaller } from "../Base/APICaller.js";
 import API_URL from "../Base/APICaller.js";
 
 const apiCaller = new APICaller(API_URL);
 
-export default class Comment extends APICaller {
+export default class Comment {
     static getAll() {
         return apiCaller.get('');
     }
