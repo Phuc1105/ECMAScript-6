@@ -6,7 +6,7 @@ let showCategory = function () {
         .then(data => {
             console.log(data);
             const categoryContainer = document.getElementById('categoryContainer');
-            showhtml += '<li class="active" data-filter="*">All</li>';
+            showhtml += '<li class="active" data-filter="*">Tất cả</li>';
 
             data.forEach(element => {
                 showhtml +=
