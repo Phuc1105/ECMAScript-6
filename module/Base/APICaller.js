@@ -1,4 +1,5 @@
-export default class APICaller {
+const API_URL = "http://localhost:3000/comment";
+export class APICaller {
     constructor(baseUrl) {
         this.baseUrl = baseUrl;
     }
@@ -8,3 +9,4 @@ export default class APICaller {
         return axios.get(apiUrl);
     }
 }
+export default API_URL;

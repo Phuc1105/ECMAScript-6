@@ -1,8 +1,9 @@
-import APICaller from "../Base/APICaller.js";
+import {APICaller} from "../Base/APICaller.js";
+import API_URL from "../Base/APICaller.js";
 
 export default class Comment extends APICaller {
     constructor() {
-        super("http://localhost:3000/comment");
+        super(API_URL);
     }
 
     static getAll() {
