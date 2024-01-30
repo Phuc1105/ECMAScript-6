@@ -91,7 +91,7 @@
       "customer_email": "phucpvpc06866@fpt.edu.vn",
       "customer_phone_number": "090501590",
       "created_date": "2024-01-18T12:00:00",
-      "status": "Đã hoàn thành"
+      "status": "Đã giao hàng"
     },
     {
       "id": 2,
@@ -100,7 +100,7 @@
       "customer_email": "hongnt@example.com",
       "customer_phone_number": "0905123456",
       "created_date": "2024-02-01T10:30:00",
-      "status": "Đang chờ xử lý"
+      "status": "Đang xử lý"
     },
     {
       "id": 3,
@@ -109,7 +109,7 @@
       "customer_email": "antran@gmail.com",
       "customer_phone_number": "0987654321",
       "created_date": "2024-02-10T15:45:00",
-      "status": "Đang xử lý"
+      "status": "Đã xác nhận"
     },
     {
       "id": 4,
@@ -118,7 +118,7 @@
       "customer_email": "maile@gmail.com",
       "customer_phone_number": "0912233445",
       "created_date": "2024-03-05T08:15:00",
-      "status": "Đã gửi đi"
+      "status": "Đang giao hàng"
     },
     {
       "id": 5,
@@ -127,7 +127,7 @@
       "customer_email": "hungvh@yahoo.com",
       "customer_phone_number": "0978123456",
       "created_date": "2024-03-20T14:20:00",
-      "status": "Đang chờ xử lý"
+      "status": "Đang xử lý"
     },
     {
       "id": 6,
@@ -136,7 +136,7 @@
       "customer_email": "minhntm@gmail.com",
       "customer_phone_number": "0934123456",
       "created_date": "2024-04-02T09:00:00",
-      "status": "Đang xử lý"
+      "status": "Đã giao hàng"
     }
   ],
   "order_details": [
