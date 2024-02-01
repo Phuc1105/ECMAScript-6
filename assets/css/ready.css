@@ -113,7 +113,7 @@ h4.page-title {
 }
 
 .text-success {
-  color: #59d05d !important;
+  color: #06f00e !important;
 }
 .text-success:hover {
   color: #59d05d !important;
@@ -2170,11 +2170,11 @@ body {
   display: list-item;
 }
 .sidebar .nav .nav-item.active a {
-  color: #575962;
-  font-weight: 700;
+  color: #000102;
+  font-weight: 800;
 }
 .sidebar .nav .nav-item.active a:before {
-  background: #1d7af3;
+  background: #046af0;
   opacity: 1 !important;
   position: absolute;
   z-index: 1;
@@ -5085,8 +5085,8 @@ body {
 }
 .card .card-title {
   margin: 0;
-  color: #575962;
-  font-size: 18px;
+  color: #090909;
+  font-size: 25px;
   font-weight: 600;
   line-height: 1.6;
 }
@@ -5436,15 +5436,16 @@ body {
 /*     Input    */
 .form-group, .form-check {
   margin-bottom: 0;
-  padding: 15px 10px;
+  padding: 10px 10px;
 }
 
 .form-group label, .form-check label {
   margin-bottom: .5rem !important;
   color: #3f4047 !important;
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
 }
+
 
 .form-inline label {
   margin-bottom: 0 !important;
@@ -6115,14 +6116,19 @@ body {
 }
 
 .btn-primary {
-  background: #1D62F0 !important;
-  border-color: #1D62F0 !important;
+  background: #013ff9 !important;
+  border-color: #075cef !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:disabled {
-  background: #1D62F0 !important;
-  border-color: #1D62F0 !important;
+  background: #0252f3 !important;
+  border-color: #0c56eb !important;
 }
-
+.border-left-primary {
+  border-left: 0.25rem solid #4e73df !important;
+}
+.border-left-success {
+  border-left: 0.25rem solid #17ec25 !important;
+}
 .btn-info {
   background: #23CCEF !important;
   border-color: #23CCEF !important;
@@ -6153,12 +6159,12 @@ body {
 }
 
 .btn-danger {
-  background: #ff646d !important;
-  border-color: #ff646d !important;
+  background: #f00511 !important;
+  border-color: #ef0612 !important;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:disabled {
-  background: #ff646d !important;
-  border-color: #ff646d !important;
+  background: #e5242e !important;
+  border-color: #ea0c17 !important;
 }
 
 .btn-border {
