@@ -1,0 +1,1 @@
+let string = 'hello word'; console.log(string);
