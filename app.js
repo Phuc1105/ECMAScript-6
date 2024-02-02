@@ -1,1 +1,1 @@
-let string = 'hello word'; console.log(string);
+let string = 'hello word'; 
