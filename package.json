@@ -13,7 +13,10 @@
     }
   },
   "lint-staged": {
-    "*.js": ["npm run lint", "git add"]
+    "*.{js,json,html,css,md}":[
+      "prettier --single-quote --write",
+     "git add"
+    ]
   }
   
 }
