@@ -1,17 +1,17 @@
 {
   "categories": [
     {
-      "id": 1,
-      "name": "Pizza"
+      "id": "a4d9",
+      "name": "Hamburger"
     },
     {
-      "id": 2,
-      "name": "Hamburger"
+      "id": "6b91",
+      "name": "Piza"
     }
   ],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Pizza chay",
       "cate_id": 1,
       "price": 35000,
@@ -19,7 +19,7 @@
       "image": "f1.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Burger Gà",
       "cate_id": 2,
       "price": 25000,
@@ -27,7 +27,7 @@
       "image": "f2.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Pizza Hải Sản",
       "cate_id": 1,
       "price": 42000,
@@ -35,7 +35,7 @@
       "image": "f3.png"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Burger Bò Phô Mai",
       "cate_id": 2,
       "price": 32000,
@@ -43,7 +43,7 @@
       "image": "f4.png"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Pizza Thịt Nướng",
       "cate_id": 1,
       "price": 38000,
@@ -51,7 +51,7 @@
       "image": "f5.png"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Burger Cá Ngừ",
       "cate_id": 2,
       "price": 29000,
@@ -59,7 +59,7 @@
       "image": "f6.png"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Pizza Nấm Phô Mai",
       "cate_id": 1,
       "price": 36000,
@@ -67,7 +67,7 @@
       "image": "f7.png"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Burger Cá Hồi",
       "cate_id": 2,
       "price": 30000,
@@ -75,17 +75,17 @@
       "image": "f8.png"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Pizza Sườn Xám",
       "cate_id": 1,
       "price": 40000,
       "detail": "Pizza sườn xám hấp dẫn với sốt cà chua và nhiều loại gia vị.",
       "image": "f9.png"
     }
-  ],  
+  ],
   "orders": [
     {
-      "id": 1,
+      "id": "1",
       "customer_name": "Phan Văn Phúc",
       "customer_address": "467, cần thơ, cái răng, đường trần chiên",
       "customer_email": "phucpvpc06866@fpt.edu.vn",
@@ -94,7 +94,7 @@
       "status": "Đã giao hàng"
     },
     {
-      "id": 2,
+      "id": "2",
       "customer_name": "Nguyễn Thị Hồng",
       "customer_address": "123, Hồ Chí Minh, Quận 1, đường Nguyễn Huệ",
       "customer_email": "hongnt@example.com",
@@ -103,7 +103,7 @@
       "status": "Đang xử lý"
     },
     {
-      "id": 3,
+      "id": "3",
       "customer_name": "Trần Văn An",
       "customer_address": "789, Hà Nội, Hoàn Kiếm, phố Cửa Đông",
       "customer_email": "antran@gmail.com",
@@ -112,7 +112,7 @@
       "status": "Đã xác nhận"
     },
     {
-      "id": 4,
+      "id": "4",
       "customer_name": "Lê Thị Mai",
       "customer_address": "456, Đà Nẵng, Hải Châu, đường Bạch Đằng",
       "customer_email": "maile@gmail.com",
@@ -121,7 +121,7 @@
       "status": "Đang giao hàng"
     },
     {
-      "id": 5,
+      "id": "5",
       "customer_name": "Hoàng Văn Hùng",
       "customer_address": "678, Vũng Tàu, Bà Rịa - Vũng Tàu, đường Trương Công Định",
       "customer_email": "hungvh@yahoo.com",
@@ -130,7 +130,7 @@
       "status": "Đang xử lý"
     },
     {
-      "id": 6,
+      "id": "6",
       "customer_name": "Ngọc Thị Minh",
       "customer_address": "234, Quảng Ninh, Hạ Long, đường Hùng Thắng",
       "customer_email": "minhntm@gmail.com",
@@ -144,37 +144,43 @@
       "order_id": 1,
       "product_id": 1,
       "quantity": 2,
-      "unit_price": 35000
+      "unit_price": 35000,
+      "id": "1e5d"
     },
     {
       "order_id": 2,
       "product_id": 3,
       "quantity": 3,
-      "unit_price": 42000
+      "unit_price": 42000,
+      "id": "f1be"
     },
     {
       "order_id": 3,
       "product_id": 5,
       "quantity": 1,
-      "unit_price": 38000
+      "unit_price": 38000,
+      "id": "5a6a"
     },
     {
       "order_id": 4,
       "product_id": 4,
       "quantity": 2,
-      "unit_price": 32000
+      "unit_price": 32000,
+      "id": "737f"
     },
     {
       "order_id": 5,
       "product_id": 7,
       "quantity": 1,
-      "unit_price": 36000
+      "unit_price": 36000,
+      "id": "32e6"
     },
     {
       "order_id": 6,
       "product_id": 9,
       "quantity": 4,
-      "unit_price": 40000
+      "unit_price": 40000,
+      "id": "3e80"
     }
   ]
 }

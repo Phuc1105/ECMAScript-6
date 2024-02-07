@@ -6,11 +6,12 @@ let showCategory = function () {
         .then(data => {
             console.log(data);
             const categoryContainer = document.getElementById('categoryContainer');
-            showhtml += '<li class="active" data-filter="*">Tất cả</li>';
-
             data.forEach(element => {
                 showhtml +=
-                    `<li data-filter=".pizza">${element.name}</li>`;
+                    ` <li class="list-group-item">
+                    <a class="d-block text-dark"
+                        href="">${element.name}</a>
+                </li> `;
             });
             categoryContainer.innerHTML = showhtml;
         })
