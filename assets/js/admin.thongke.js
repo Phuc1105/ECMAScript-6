@@ -1,10 +1,7 @@
-// Khai báo thư viện Axios
-const axios = require('axios');
+// const axios = require('axios');
 
-// URL của JSON Server
 const jsonServerUrl = 'http://localhost:3000';
 
-// Hàm lấy dữ liệu từ JSON Server
 async function getData(endpoint) {
   try {
     const response = await axios.get(`${jsonServerUrl}/${endpoint}`);
@@ -15,9 +12,7 @@ async function getData(endpoint) {
   }
 }
 
-// Hàm thống kê đơn hàng
 async function thongKeDonHang() {
-  // Lấy dữ liệu từ JSON Server
   const orders = await getData('orders');
   const orderDetails = await getData('order_details');
   const products = await getData('products');
@@ -57,7 +52,10 @@ async function thongKeDonHang() {
     tongSoLuongSanPham += soLuong;
     tongDoanhThu += doanhThu;
   });
-
+  let quantity = document.getElementById("quantity");
+  let totalPrice = document.getElementById("totalPrice");
+  quantity.innerHTML = tongSoLuongSanPham;
+  totalPrice.innerHTML = tongDoanhThu;
   // In kết quả thống kê
   console.log(`Tổng số lượng sản phẩm đã bán: ${tongSoLuongSanPham}`);
   console.log(`Tổng doanh thu: ${tongDoanhThu} VND`);
