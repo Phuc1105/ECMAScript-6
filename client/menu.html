@@ -76,24 +76,22 @@
         </section>
       </div>
       <div class="col-3 layout_padding">
-        <label for="categoryFilter">Category:</label>
+        <label for="categoryFilter">Danh mục:</label>
         <select id="categoryFilter">
-          <option value="">All</option>
-         
+          <option value="">Tất cả</option>
           <option value="1">Pizza</option>
           <option value="2">Hamburger</option>
         </select>
-      
-        <label for="priceRangeFilter">Price Range:</label>
-        <input type="number" id="minPrice" placeholder="Min Price">
-        <input type="number" id="maxPrice" placeholder="Max Price">
-      
-        <button onclick="filterProducts()">Filter Products</button>
 
-      
+        <label for="priceRangeFilter">Phạm vi giá:</label>
+        <input type="number" id="minPrice" placeholder="Giá thấp nhất">
+        <input type="number" id="maxPrice" placeholder="Giá cao nhất">
+
+        <button onclick="filterProducts()">Lọc sản phẩm</button>
+
         <ul id="productList"></ul>
+      </div>
     </div>
-  </div>
   </div>
 
 
