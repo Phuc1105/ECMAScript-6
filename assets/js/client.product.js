@@ -20,9 +20,9 @@ let showProducts = function () {
                                         <p>${element.detail}</p>
                                         <div class="options">
                                             <h6>${element.price}đ</h6>
-                                            <button class=" class="" style="width: 100px; height: 35px; text-align: justify; border-radius: 25px; background-color: gold; border: none; 	color: #fff;
+                                            <button class=" class="" style="width: 90px; height: 35px; text-align: justify; border-radius: 25px; background-color: gold; border: none; 	color: #fff;
                                             " type="submit" name="them"" onclick="addToCart(${element.id})">
-                                            Order Now
+                                            Mua Ngay
 
                                             </button>
                                         </div>
