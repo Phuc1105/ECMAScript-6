@@ -64,8 +64,6 @@ let addToCart = function (productId) {
 };
 
 
-
-
 // Hàm để cập nhật số lượng sản phẩm trong giỏ hàng trên giao diện
 let updateCartCount = function () {
     const cartCountElement = document.getElementById('cartCount'); // Truy xuất phần tử theo ID

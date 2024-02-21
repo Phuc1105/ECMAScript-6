@@ -17,7 +17,7 @@ function showCartItems(cartData) {
             <td>${element.price}</td>
             <td width="300px">${element.detail}</td>
             <td>3</td>
-            <td><button type="button" class="btn btn-primary delete-btn">Xóa</button></td>
+            <td><button type="button" class="btn btn-danger delete-btn">Xóa</button></td>
         </tr>
         `;
     });
@@ -35,4 +35,5 @@ function showCartItems(cartData) {
             showCartItems(cartData);
         });
     });
+
 }
