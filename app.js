@@ -6,7 +6,7 @@ function Categories() {
     axios.get(`${firebaseUrl}/categories.json`)
         .then(response => {
             const categoryBody = document.getElementById('categoryBody');
-            categoryBody.innerHTML = ''; // Xóa nội dung cũ
+            categoryBody.innerHTML = '';
             let index = 1;
             if (response.data) {
                 Object.keys(response.data).forEach(key => {
@@ -29,7 +29,7 @@ function Categories() {
 }
 
 // Thêm danh mục mới
-document.getElementById('addCategory').addEventListener('click', () => {
+document.getElementById('addCategory').addEventListener('click', () => { // lấy id và thực hiện sự kiện click
     const nameCategory = document.getElementById('nameCategory').value.trim();
     if (nameCategory !== '') {
         axios.post(`${firebaseUrl}/categories.json`, { name: nameCategory })
@@ -40,18 +40,24 @@ document.getElementById('addCategory').addEventListener('click', () => {
             .catch(error => {
                 console.error('Lỗi khi thêm danh mục:', error);
             });
+    }else{
+        alert("Vui lòng nhập tên danh mục!!!!!")
+
     }
 });
 
 // Xóa danh mục
 function deleteCategory(categoryId) {
-    axios.delete(`${firebaseUrl}/categories/${categoryId}.json`)
+    if(confirm("Bạn có chắc chắn muốn xóa!!")){
+        axios.delete(`${firebaseUrl}/categories/${categoryId}.json`)
         .then(response => {
+            
             Categories();
         })
         .catch(error => {
             console.error('Lỗi khi xóa danh mục:', error);
         });
+    }
 }
 
 // Chỉnh sửa danh mục
